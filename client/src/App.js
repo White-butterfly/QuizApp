@@ -13,7 +13,6 @@ import Home from './components/Home Section/Home';
 import Categories from './components/Category Section/Categories';
 import Contact from './components/Contact Section/Contact';
 import About from './components/About Section/About';
-import Section1 from './components/Home Section/Section1';
 import Cat1 from './components/Category Section/Cat1';
 function App() {
 
