@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import "slick-carousel/slick/slick.css";  
-import "slick-carousel/slick/slick-theme.css";  
-import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";  
+// import "slick-carousel/slick/slick-theme.css";  
+// import Slider from "react-slick";
 import Auth from "./auth/Auth";
 
 const Header = () => {
   const [showNav, SetShowNav] = useState(false);
 const [Account, SetAccount] = useState(false);
-const [showToggle, setshowToggle] = useState(false);
+
   return (
     <div>
       <header className="header">
@@ -56,13 +56,7 @@ const [showToggle, setshowToggle] = useState(false);
         </nav>
 
         <div className="icons">
-          <div id="account-btn"
-           className="fas fa-user"
-           onClick={()=> SetAccount(!Account)}
-           role= "button"
-           onKeyDown={()=>SetAccount(!Account)}
-           tabIndex={0}
-          ></div>
+        
           {/* fas fa-user waa profile ka qofka  */}
           <div id="menu-btn" className="fas fa-bars"
              onClick={()=> SetShowNav(!showNav)}
@@ -83,55 +77,8 @@ const [showToggle, setshowToggle] = useState(false);
              onKeyDown={()=>SetAccount(!Account)}
              tabIndex={0}
         ></div>
-     {/* <div class="buttons" >
-    <span class="btn login-btn"
-      onClick={()=> setshowToggle(!showToggle)}
-      role= "button"
-      onKeyDown={()=>setshowToggle(!showToggle)}
-      tabIndex={0}
-     >login</span>
-     <span class="btn  register-btn" 
-       onClick={()=> setshowToggle(!showToggle)}
-       role= "button"
-       onKeyDown={()=>setshowToggle(!showToggle)}
-       tabIndex={0}
-     >register</span>
-</div> */}
- 
-<form 
-className="login-form  active" 
-action=""
-onClick={()=> setshowToggle(!showToggle)}
-role= "button"
-onKeyDown={()=>setshowToggle(!showToggle)}
-tabIndex={0}
->
-       <h3>login now</h3>
-       <input type="email" placeholder="enter your email" className="box"/>
-       <input type="password" placeholder="enter your password" className="box"/>
-       <div className="flex">
-          <input type="checkbox" name="" id="remember-me"/>
-          <label for="remember-me">remember me</label>
-          <a href="#">forgot password?</a>
-       </div>
-       <input type="submit" value="login now" className="btn"
 
-      />
-    </form>
  
-    <form className="register-form  active" action=""
-      onClick={()=> setshowToggle(!showToggle)}
-      role= "button"
-      onKeyDown={()=>setshowToggle(!showToggle)}
-      tabIndex={0}>
-       <h3>register now</h3>
-       <input type="email" placeholder="enter your email" className="box"/>
-       <input type="password" placeholder="enter your password" className="box"/>
-       <input type="password" placeholder="confirm your password" className="box"/>
-       <input type="submit" value="register now" className="btn"
-
-      />
-    </form>
  
 
       </div>

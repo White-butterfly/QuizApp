@@ -33,7 +33,7 @@ const About1 = () => {
           </div>
        </div>
     </div>
- 
+  
  </section>
  
  {/* <!-- about section ends --> */}
